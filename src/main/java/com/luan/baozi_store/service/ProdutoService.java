@@ -28,7 +28,7 @@ public class ProdutoService {
         return produtoRepository.save(produto);
     }
 
-    public boolean existById(Long id){
+    public boolean existsById(Long id){
         return produtoRepository.existsById(id);
     }
 
