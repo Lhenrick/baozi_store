@@ -1,10 +1,7 @@
 package com.luan.baozi_store.service;
 
-import com.luan.baozi_store.model.Cliente;
 import com.luan.baozi_store.model.Pedido;
-import com.luan.baozi_store.repository.ClienteRepository;
 import com.luan.baozi_store.repository.PedidoRepository;
-import com.luan.baozi_store.repository.ProdutoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,7 +38,7 @@ public class PedidoService {
             return pedidoRepository.save(pedido);
         }
 
-        throw new RuntimeException("Cliente ou pedido não encontrado");
+        throw new RuntimeException("Cliente ou produto não encontrado");
     }
 
     public boolean existsById(Long id){
