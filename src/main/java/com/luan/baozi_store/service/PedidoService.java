@@ -44,6 +44,12 @@ public class PedidoService {
         throw new RuntimeException("Cliente ou pedido não encontrado");
     }
 
+    public boolean existsById(Long id){
+        return pedidoRepository.existsById(id);
+    }
 
+    public void deleteById(Long id){
+        pedidoRepository.deleteById(id);
+    }
 
 }
